@@ -1,7 +1,7 @@
 const navLinks = [
     {
         name: "About",
-        link: "#about",
+        link: "/",
     },
     {
         name: "Work",
@@ -95,22 +95,22 @@ const expCards = [
     }
 ];
 
-const socialImgs = [
+const socialLinks = [
     {
         name: "linkedin",
-        url: "https://www.linkedin.com/",
-        imgPath: "/images/linkedin.png",
+        url: "https://www.linkedin.com/in/BhagyashreeShettigar",
+        icon: 'FaLinkedin'
     },
     {
         name: "github",
-        url: "https://www.github.com/",
-        imgPath: "/images/github.png",
+        url: "https://www.github.com/bgshettigar95",
+        icon: 'FaGithub'
     },
 ];
 
 export {
     navLinks,
     expCards,
-    socialImgs,
+    socialLinks,
     techStackIcons
 };
