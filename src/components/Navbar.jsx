@@ -4,22 +4,22 @@ import * as FaIcons from "react-icons/fa6";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between fixed right-0 top-0 w-full">
-      <div className="flex flex-shrink-0 items-center">
+    <nav className="flex justify-center md:justify-between right-0 top-0 w-full">
+      <div className="hidden md:flex flex-shrink-0 items-center ">
         <a href="/" aria-label="Home" className="ml-2">
           <img src={logo} className="mx-2" alt="logo" width={20} height={20} />
         </a>
       </div>
 
-      <ul className="flex flex-row justify-center">
+      <ul className="flex flex-row justify-around mx-2">
         {navLinks.map((navLink) => (
-          <li className="list-none m-4" key={navLink.name}>
+          <li className="list-none m-3" key={navLink.name}>
             <a href={navLink.link}>{navLink.name}</a>
           </li>
         ))}
       </ul>
 
-      <div className="flex items-center mx-4">
+      <div className="hidden md:flex items-center mx-4">
         {socialLinks.map((socialLink) => {
           const Icon = FaIcons[socialLink.icon];
           return (

@@ -17,6 +17,12 @@ const navLinks = [
     }
 ];
 
+const introduction = {
+    name: "Bhagyashree Shettigar",
+    role: "Senior Frontend Developer",
+    desc: "Experienced frontend developer with over 9+ years of experience passionate about creating interactive, accessible, high-performance web and mobile applications using Angular, React, React Native and Node.js. Responsibly assume the challenges and goals that the organization assigns me, adaptability to change, ability to work in teams, ability to work under high pressure, as well as to solve problems efficiently and achieve productivity goals set by the company and my work group. Eager to learn new technologies and methodologies and always willing to innovate the new things."
+}
+
 const techStackIcons = [
     {
         name: "React",
@@ -110,6 +116,7 @@ const socialLinks = [
 
 export {
     navLinks,
+    introduction,
     expCards,
     socialLinks,
     techStackIcons
