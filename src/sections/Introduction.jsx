@@ -4,7 +4,7 @@ import { introduction } from "../constants";
 
 const Introduction = () => {
   return (
-    <section id="introduction" className="w-full pb-4 lg:mb-36">
+    <section id="introduction" className="w-full pb-4 lg:mb-16">
       <div className="flex flex-wrap lg:flex-row-reverse">
         <div className="w-full lg:w-1/2">
           <div className="flex items-center justify-center">

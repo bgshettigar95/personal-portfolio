@@ -17,8 +17,9 @@ const App = () => {
       <div className="md:mx-[20px]">
         <Navbar />
         <Introduction />
+        <Skills />
         {/* <ShowcaseSection />
-            <Skills />
+            
             <Experience />
             <ContactMe /> */}
       </div>

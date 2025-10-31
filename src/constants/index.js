@@ -26,32 +26,39 @@ const introduction = {
 const techStackIcons = [
     {
         name: "React",
-        imgPath: "/images/logos/react.png",
-    },
-    {
-        name: "React Native",
-        imgPath: "/images/logos/react-native.png",
+        icon: "TbBrandReact",
+        cssClass: "text-[#61DAFB]"
     },
     {
         name: "Angular",
-        imgPath: "/images/logos/angular.png",
+        icon: "TbBrandAngularFilled",
+        cssClass: "text-[#DD0031]"
+    },
+    {
+        name: "Tailwind",
+        icon: "TbBrandTailwind",
+        cssClass: "text-[#38BDF8]"
     },
     {
         name: "Redux",
-        imgPath: "/images/logos/redux.png",
-    },
-    {
-        name: "Rxjs",
-        imgPath: "/images/logos/rxjs.png",
+        icon: "TbBrandRedux",
+        cssClass: "text-[#764ABC]"
     },
     {
         name: "Node Js",
-        imgPath: "/images/logos/node.png",
+        icon: "TbBrandNodejs",
+        cssClass: "text-[#339933]"
     },
     {
-        name: "ExpressJs",
-        imgPath: "/images/logos/express.png",
-    }
+        name: "Docker",
+        icon: "TbBrandDocker",
+        cssClass: "text-[#2496ED]"
+    },
+    {
+        name: "MongoDB",
+        icon: "TbBrandMongodb",
+        cssClass: "text-[#47A248]"
+    },
 ];
 
 const expCards = [
