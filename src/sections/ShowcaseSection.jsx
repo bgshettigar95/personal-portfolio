@@ -1,7 +1,7 @@
 import React from "react";
 import { projects } from "../constants";
 
-const ShowcaseSection = () => {
+export const ShowcaseSection = () => {
   return (
     <section id="work" className="pb-24">
       <h2 className="text-4xl text-center my-20">Projects</h2>

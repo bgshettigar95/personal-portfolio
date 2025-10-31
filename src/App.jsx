@@ -19,9 +19,10 @@ const App = () => {
         <Introduction />
         <Skills />
         <ShowcaseSection />
+        <Experience />
         {/* 
             
-            <Experience />
+ 
             <ContactMe /> */}
       </div>
     </div>

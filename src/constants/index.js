@@ -94,12 +94,13 @@ const projects = [
     }
 ]
 
-const expCards = [
+const experiences = [
     {
         imgPath: "/images/company/akamai.png",
         logoPath: "/images/logos/akamai.png",
         title: "Senior Frontend Engineer",
-        date: "September 2023 - Present",
+        organization: "Akamai Technologies",
+        year: "September 2023 - Present",
         responsibilities: [
             "Led the migration of legacy DNS-Based Management applications from AngularJS to Angular 19 enhancing maintainability, scalability and performance by 30%",
             "Analysed existing application functionality and decomposed it into feature-based tickets for efficient development tracking.",
@@ -111,7 +112,8 @@ const expCards = [
         imgPath: "/images/company/publicis.png",
         logoPath: "/images/logos/publicis.png",
         title: "Senior Associate L1 developer",
-        date: "August 2021 – September 2023",
+        organization: "Publicis Sapient",
+        year: "August 2021 – September 2023",
         responsibilities: [
             "Developed and maintained enterprise-grade web applications using Angular (v14+), React, D3.js, and CSS for two high-impact platforms in the performance analytics and e-commerce domains.",
             "Designed and implemented intuitive dashboards in PSknowHOW using D3.js, enabling organizations to track transformation KPIs visually; contributed across the full SDLC including requirements gathering, UI design, development, unit testing (Karma), defect fixing, and code reviews.",
@@ -123,7 +125,8 @@ const expCards = [
         imgPath: "/images/company/diverselync.png",
         logoPath: "/images/logos/diverselync.png",
         title: "Senior UI Developer",
-        date: "October 2020 To August 2021",
+        organization: "Diverse Lync Private Ltd.",
+        year: "October 2020 To August 2021",
         responsibilities: [
             "Developed UI screens for core banking modules including Customers, Accounts.",
             "Responsible for requirement gathering, UI design, component development, and unit testing."
@@ -132,8 +135,9 @@ const expCards = [
     {
         imgPath: "/images/company/infosys.png",
         logoPath: "/images/logos/infosys.png",
+        organization: "Infosys Limited",
         title: "Systems Engineer",
-        date: "October 2020 To August 2021",
+        year: "October 2020 To August 2021",
         responsibilities: [
             "Developed a search tool for healthcare providers to retrieve medical bill statuses, significantly improving operational efficiency and reducing response time by eliminating call center dependencies.",
             "Developed a LinkedIn Profile Import connector to streamline Jive community onboarding by enabling users to import LinkedIn profile data. Built using Angular, Node.js, HTML/CSS, Bootstrap 3, PostgreSQL, and OAuth 2.0; version control with Git."
@@ -157,7 +161,7 @@ const socialLinks = [
 export {
     navLinks,
     introduction,
-    expCards,
+    experiences,
     socialLinks,
     techStackIcons,
     projects
