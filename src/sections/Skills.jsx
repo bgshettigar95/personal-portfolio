@@ -10,8 +10,7 @@ const Skills = () => {
         {techStackIcons.map((techStackIcon) => {
           const Icon = TbIcons[techStackIcon.icon];
           return (
-            <div className="p-4">
-              {" "}
+            <div className="p-4" key={techStackIcon.name}>
               {Icon && (
                 <Icon className={`text-7xl ${techStackIcon.cssClass}`} />
               )}

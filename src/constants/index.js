@@ -61,6 +61,39 @@ const techStackIcons = [
     },
 ];
 
+const projects = [
+    {
+        image: "/images/project1.jpg",
+        title: "TaskFlow - Project Management App",
+        desc: "A collaborative project management tool with real-time updates, Kanban boards, and user authentication.",
+        technologies: ["React", "Redux", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Docker"],
+    },
+    {
+        image: "/images/project2.jpg",
+        title: "DevPortfolio - Personal Portfolio Website",
+        desc: "A modern developer portfolio showcasing skills, projects, and blog posts, built with responsive design.",
+        technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    },
+    {
+        image: "/images/project3.jpg",
+        title: "ShopEase - E-commerce Platform",
+        desc: "Full-stack e-commerce app with shopping cart, payments integration, and admin dashboard.",
+        technologies: ["React", "Redux", "Node.js", "Express", "MongoDB", "Stripe", "Docker"],
+    },
+    {
+        image: "/images/project4.jpg",
+        title: "InsightHub - Analytics Dashboard",
+        desc: "A data visualization dashboard providing real-time metrics using charts and API integration.",
+        technologies: ["Angular", "TypeScript", "Tailwind CSS", "Chart.js", "Firebase"],
+    },
+    {
+        image: "/images/project5.jpg",
+        title: "BlogSphere - Markdown Blogging Platform",
+        desc: "A developer-focused blogging platform supporting markdown, syntax highlighting, and content management.",
+        technologies: ["React", "Next.js", "Tailwind CSS", "MongoDB"],
+    }
+]
+
 const expCards = [
     {
         imgPath: "/images/company/akamai.png",
@@ -126,5 +159,6 @@ export {
     introduction,
     expCards,
     socialLinks,
-    techStackIcons
+    techStackIcons,
+    projects
 };
