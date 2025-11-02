@@ -1,10 +1,11 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./sections/Navbar";
 import Introduction from "./sections/Introduction";
 import ShowcaseSection from "./sections/ShowcaseSection";
 import Experience from "./sections/Experience";
 import ContactMe from "./sections/ContactMe";
 import Skills from "./sections/Skills";
+import Footer from "./sections/Footer";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <ShowcaseSection />
         <Experience />
         <ContactMe />
+        <Footer />
       </div>
     </div>
   );
