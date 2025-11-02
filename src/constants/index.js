@@ -158,11 +158,17 @@ const socialLinks = [
     },
 ];
 
+const contactDetails = {
+    email: "bgshettigar95@gmail.com",
+    location: "Mumbai, India"
+}
+
 export {
     navLinks,
     introduction,
     experiences,
     socialLinks,
     techStackIcons,
-    projects
+    projects,
+    contactDetails
 };

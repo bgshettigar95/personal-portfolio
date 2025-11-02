@@ -4,7 +4,7 @@ import { techStackIcons } from "../constants";
 
 const Skills = () => {
   return (
-    <section id="skills" className="pb-24">
+    <section id="skills" className="pb-16">
       <h2 className="text-4xl text-center my-20">Technologies</h2>
       <div className="flex flex-wrap items-center justify-center gap-4">
         {techStackIcons.map((techStackIcon) => {

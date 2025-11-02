@@ -3,7 +3,7 @@ import { projects } from "../constants";
 
 export const ShowcaseSection = () => {
   return (
-    <section id="work" className="pb-24">
+    <section id="work" className="pb-16">
       <h2 className="text-4xl text-center my-20">Projects</h2>
       <div>
         {projects.map((project) => {
