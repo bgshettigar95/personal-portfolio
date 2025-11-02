@@ -3,7 +3,7 @@ import { introduction } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className="text-stone-400 text-center m-4">
+    <footer className="text-stone-400 text-sm text-center m-4">
       © {new Date().getFullYear()} {introduction.name}. All rights reserved.
     </footer>
   );

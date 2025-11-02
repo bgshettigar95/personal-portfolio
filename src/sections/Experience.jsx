@@ -1,18 +1,36 @@
 import React from "react";
 import { experiences } from "../constants";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
-    <section id="experience" className="pb-16">
-      <h2 className="text-4xl text-center my-20">Experiences</h2>
+    <section id="experience" className="mb-16">
+      <motion.h2
+        className="text-4xl text-center my-20"
+        initial={{ opacity: 0, y: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        Experiences
+      </motion.h2>
       <div className="mx-2 p-4">
         {experiences.map((experience, index) => {
           return (
             <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-              <div className="w-full lg:w-1/4">
+              <motion.div
+                className="w-full lg:w-1/4"
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <p className="mb-2 text-sm text-stone-400">{experience.year}</p>
-              </div>
-              <div className="w-full max-w-xl lg:w-3/4">
+              </motion.div>
+              <motion.div
+                className="w-full max-w-xl lg:w-3/4"
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <h3 className="mb-2 font-semibold">
                   {experience.title} -{" "}
                   <span className="text-sm text-stone-500">
@@ -24,7 +42,7 @@ const Experience = () => {
                     <li key={index}>{res}</li>
                   ))}
                 </div>
-              </div>
+              </motion.div>
             </div>
           );
         })}

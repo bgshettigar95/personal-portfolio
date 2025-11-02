@@ -1,10 +1,18 @@
 import React from "react";
 import { projects } from "../constants";
+import { motion } from "framer-motion";
 
 export const ShowcaseSection = () => {
   return (
-    <section id="work" className="pb-16">
-      <h2 className="text-4xl text-center my-20">Projects</h2>
+    <section id="work" className="mb-16">
+      <motion.h2
+        className="text-4xl text-center my-20"
+        initial={{ opacity: 0, y: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        Projects
+      </motion.h2>
       <div>
         {projects.map((project) => {
           return (
@@ -12,7 +20,12 @@ export const ShowcaseSection = () => {
               key={project.title}
               className="mb-8 p-4 flex flex-wrap lg:justify-center"
             >
-              <div className="w-full lg:w-1/4">
+              <motion.div
+                className="w-full lg:w-1/4"
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <img
                   src={project.image}
                   height={250}
@@ -20,8 +33,13 @@ export const ShowcaseSection = () => {
                   className="mb-6 rounded"
                   alt={project.title}
                 />
-              </div>
-              <div className="w-full lg:w-3/4">
+              </motion.div>
+              <motion.div
+                className="w-full lg:w-3/4"
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
                 <p className="mb-4 text-stone-400">{project.desc}</p>
                 <div className="flex flex-wrap">
@@ -36,7 +54,7 @@ export const ShowcaseSection = () => {
                     );
                   })}
                 </div>
-              </div>
+              </motion.div>
             </div>
           );
         })}

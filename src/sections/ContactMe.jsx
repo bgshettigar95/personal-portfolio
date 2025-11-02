@@ -4,6 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { contactDetails, socialLinks } from "../constants";
 import * as FaIcons from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 const ContactMe = () => {
   const [formData, setFormData] = useState({
@@ -63,9 +64,21 @@ const ContactMe = () => {
 
   return (
     <section id="experience" className="pb-16">
-      <h2 className="text-4xl text-center my-20">Get in Touch</h2>
+      <motion.h2
+        className="text-4xl text-center my-20"
+        initial={{ opacity: 0, y: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        Get in Touch
+      </motion.h2>
       <div className="flex flex-wrap justify-center items-center lg:items-start">
-        <div className="w-full lg:w-1/2">
+        <motion.div
+          className="w-full lg:w-1/2"
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
           <form onSubmit={handleSubmit} className="m-4" ref={formRef}>
             <div className="mb-6">
               <label htmlFor="name">Name</label>
@@ -120,9 +133,14 @@ const ContactMe = () => {
               {status === "sending" ? "Sending..." : "Send Message"}
             </button>
           </form>
-        </div>
+        </motion.div>
 
-        <div className="w-full lg:w-1/2">
+        <motion.div
+          className="w-full lg:w-1/2"
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
           <div className="flex flex-col items-center lg:items-start ml-4 mt-4">
             <div className="flex flex-col mb-4 items-center lg:items-start">
               <h3 className="mb-2 font-semibold flex items-center">
@@ -163,7 +181,7 @@ const ContactMe = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
