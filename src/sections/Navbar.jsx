@@ -1,25 +1,43 @@
-import { navLinks, socialLinks } from "../constants";
+import { introduction, navLinks, socialLinks } from "../constants";
 import logo from "../assets/logo.png";
 import * as FaIcons from "react-icons/fa6";
 
 const Navbar = () => {
+  const nameText = introduction.name.split(" ");
   return (
-    <nav className="flex justify-center md:justify-between right-0 top-0 w-full">
-      <div className="hidden md:flex flex-shrink-0 items-center ">
+    <header className="flex justify-between right-0 top-0 w-full fixed bg-black z-20 p-1">
+      <div className="flex flex-shrink-0 items-center ">
         <a href="/" aria-label="Home" className="ml-2">
-          <img src={logo} className="mx-2" alt="logo" width={20} height={20} />
+          {/* <img src={logo} className="mx-2" alt="logo" width={20} height={20} /> */}
+          <div className="flex flex-col">
+            {nameText.map((text, i) => {
+              return (
+                <span
+                  key={i}
+                  className={`text-sm font-bold bg-gradient-to-r from-purple-100 to-purple-800 bg-clip-text text-transparent`}
+                >
+                  {text}
+                </span>
+              );
+            })}
+          </div>
         </a>
       </div>
 
-      <ul className="flex flex-row justify-around mx-2">
-        {navLinks.map((navLink) => (
-          <li className="list-none m-3" key={navLink.name}>
-            <a href={navLink.link}>{navLink.name}</a>
-          </li>
-        ))}
-      </ul>
+      <nav>
+        <ul className="hidden md:flex flex-row justify-around mx-2">
+          {navLinks.map((navLink) => (
+            <li
+              className="list-none m-3 text-sm text-stone-400 hover:font-bold"
+              key={navLink.name}
+            >
+              <a href={navLink.link}>{navLink.name}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
 
-      <div className="hidden md:flex items-center mx-4">
+      <div className="flex items-center mx-4">
         {socialLinks.map((socialLink) => {
           const Icon = FaIcons[socialLink.icon];
           return (
@@ -36,7 +54,7 @@ const Navbar = () => {
           );
         })}
       </div>
-    </nav>
+    </header>
   );
 };
 

@@ -17,7 +17,7 @@ const childVariants = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.5 },
+    transition: { duration: 1 },
   },
 };
 
@@ -45,16 +45,22 @@ const Introduction = () => {
             variants={containerVariants}
           >
             <motion.h2
-              className="pb-2 text-4xl tracking-tighter lg:text-8xl"
+              className="pb-2 text-4xl text-center tracking-tighter lg:text-8xl md:text-start"
               variants={childVariants}
             >
               {introduction.name}
             </motion.h2>
-            <motion.span
-              className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-2xl lg:text-3xl tracking-tight text-transparent"
-              variants={childVariants}
-            >
-              {introduction.role}
+            <motion.span className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-2xl lg:text-3xl tracking-tight text-transparent">
+              {introduction.role.split("").map((letter, index) => (
+                <motion.span
+                  key={index}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: index * 0.025, duration: 0 }}
+                >
+                  {letter}
+                </motion.span>
+              ))}
             </motion.span>
             <motion.p
               className="my-4 max-w-lg text-xl leading-relaxed tracking-tighter"
@@ -67,7 +73,7 @@ const Introduction = () => {
               download="resume.pdf"
               rel="noopener noreferrer"
               target="_blank"
-              className="bg-white rounded-full p-4 text-sm text-stone-800 mb-10"
+              className="bg-white rounded-full p-4 text-sm text-stone-700 mb-10 hover:bg-stone-700 hover:text-white font-bold"
               variants={childVariants}
             >
               Download Resume
