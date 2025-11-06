@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const ShowcaseSection = () => {
   return (
-    <section id="work" className="mb-16">
+    <section id="work" className="pt-16">
       <motion.h2
         className="text-4xl text-center my-20"
         initial={{ opacity: 0, y: -100 }}

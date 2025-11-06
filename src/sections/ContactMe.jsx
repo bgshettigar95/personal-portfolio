@@ -63,7 +63,7 @@ const ContactMe = () => {
   };
 
   return (
-    <section id="experience" className="pb-16">
+    <section id="experience" className="pb-16 pt-16">
       <motion.h2
         className="text-4xl text-center my-20"
         initial={{ opacity: 0, y: -100 }}

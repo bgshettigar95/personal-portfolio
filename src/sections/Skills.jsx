@@ -18,7 +18,7 @@ const iconVariants = (duration) => ({
 
 const Skills = () => {
   return (
-    <section id="skills" className="mb-16">
+    <section id="skills" className="pt-16">
       <motion.h2
         className="text-4xl text-center mb-20"
         initial={{ opacity: 0, y: -100 }}
@@ -44,7 +44,10 @@ const Skills = () => {
               variants={iconVariants(index % 2 === 0 ? 2.5 : 5)}
             >
               {Icon && (
-                <Icon className={`text-7xl ${techStackIcon.cssClass}`} />
+                <Icon
+                  className={`text-7xl ${techStackIcon.cssClass}`}
+                  title={techStackIcon.name}
+                />
               )}
             </motion.div>
           );

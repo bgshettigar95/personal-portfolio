@@ -2,6 +2,7 @@ import React from "react";
 import profilePic from "../assets/profilephoto1.png";
 import { introduction } from "../constants";
 import { motion } from "framer-motion";
+import { FaArrowDown } from "react-icons/fa6";
 
 const containerVariants = {
   hidden: { opacity: 0, x: -100 },
@@ -21,9 +22,22 @@ const childVariants = {
   },
 };
 
+const downloadIconVariants = (duration) => ({
+  initial: { y: 0 },
+  animate: {
+    y: [5, 0],
+    transition: {
+      duration: duration,
+      ease: "linear",
+      repeat: Infinity,
+      repeatType: "reverse",
+    },
+  },
+});
+
 const Introduction = () => {
   return (
-    <section id="introduction" className="w-full pb-4 lg:mb-16">
+    <section id="introduction" className="w-full pb-4 pt-14 lg:mb-16">
       <div className="flex flex-wrap lg:flex-row-reverse">
         <div className="w-full lg:w-1/2">
           <div className="flex items-center justify-center">
@@ -32,7 +46,7 @@ const Introduction = () => {
               className="brightness-90 contrast-110 md:h-140"
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 1.5 }}
+              transition={{ duration: 1, delay: 1 }}
             />
           </div>
         </div>
@@ -56,7 +70,7 @@ const Introduction = () => {
                   key={index}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ delay: index * 0.025, duration: 0 }}
+                  transition={{ delay: index * 0.04, duration: 0 }}
                 >
                   {letter}
                 </motion.span>
@@ -73,10 +87,18 @@ const Introduction = () => {
               download="resume.pdf"
               rel="noopener noreferrer"
               target="_blank"
-              className="bg-white rounded-full p-4 text-sm text-stone-700 mb-10 hover:bg-stone-700 hover:text-white font-bold"
+              className=" flex items-center group bg-white rounded-xl px-4 py-3 text-sm text-stone-700 mb-10 hover:bg-stone-700 hover:text-white font-semibold"
               variants={childVariants}
             >
-              Download Resume
+              <span className="mr-2">Download Resume</span>
+              <motion.span
+                initial="initial"
+                animate="animate"
+                variants={downloadIconVariants(1)}
+                className="rounded-full p-2 bg-stone-700 text-white group-hover:bg-white group-hover:text-stone-700"
+              >
+                <FaArrowDown />
+              </motion.span>
             </motion.a>
           </motion.div>
         </div>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
-    <section id="experience" className="mb-16">
+    <section id="experience" className="pt-16">
       <motion.h2
         className="text-4xl text-center my-20"
         initial={{ opacity: 0, y: -100 }}
@@ -14,9 +14,12 @@ const Experience = () => {
         Experiences
       </motion.h2>
       <div className="mx-2 p-4">
-        {experiences.map((experience, index) => {
+        {experiences.map((experience) => {
           return (
-            <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+            <div
+              key={experience.title}
+              className="mb-8 flex flex-wrap lg:justify-center"
+            >
               <motion.div
                 className="w-full lg:w-1/4"
                 initial={{ opacity: 0, x: -100 }}
@@ -38,8 +41,8 @@ const Experience = () => {
                   </span>
                 </h3>
                 <div className="mb-4 text-stone-400">
-                  {experience.responsibilities.map((res, index) => (
-                    <li key={index}>{res}</li>
+                  {experience.responsibilities.map((res) => (
+                    <li key={res}>{res}</li>
                   ))}
                 </div>
               </motion.div>

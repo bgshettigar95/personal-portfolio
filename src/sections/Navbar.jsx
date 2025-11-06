@@ -7,8 +7,7 @@ const Navbar = () => {
   return (
     <header className="flex justify-between right-0 top-0 w-full fixed bg-black z-20 p-1">
       <div className="flex flex-shrink-0 items-center ">
-        <a href="/" aria-label="Home" className="ml-2">
-          {/* <img src={logo} className="mx-2" alt="logo" width={20} height={20} /> */}
+        <a href="#introduction" aria-label="Home" className="ml-2">
           <div className="flex flex-col">
             {nameText.map((text, i) => {
               return (
@@ -28,7 +27,7 @@ const Navbar = () => {
         <ul className="hidden md:flex flex-row justify-around mx-2">
           {navLinks.map((navLink) => (
             <li
-              className="list-none m-3 text-sm text-stone-400 hover:font-bold"
+              className="list-none m-3 text-sm text-stone-400 hover:font-bold hover:text-purple-400"
               key={navLink.name}
             >
               <a href={navLink.link}>{navLink.name}</a>
@@ -49,7 +48,7 @@ const Navbar = () => {
               aria-label={socialLink.name}
               key={socialLink.name}
             >
-              {Icon && <Icon size={20} />}
+              {Icon && <Icon size={20} className="hover:text-purple-400" />}
             </a>
           );
         })}
