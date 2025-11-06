@@ -1,12 +1,45 @@
-# React + Vite
+# 👩💻 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, animated, and responsive **personal portfolio website** built with **React**, **Tailwind CSS**, and **Framer Motion** — designed to showcase your **skills**, **projects**, **experience**, and **contact information** in style.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ⚡ **Responsive design** with Tailwind CSS  
+- 🎞️ **Smooth animations** using Framer Motion  
+- 🧠 **Dynamic sections** (Introduction, Skills, Projects, Experience, Contact)  
+- 📞 **Contact form** integration with EmailJS or Formspree  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Description |
+|-------------|-------------|
+| **React** | Frontend JavaScript library |
+| **Tailwind CSS** | Utility-first CSS framework |
+| **Framer Motion** | Animation library for React |
+| **EmailJS** | Email service for contact form integration |
+
+---
+
+## 📸 Preview
+
+## ⚙️ Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/bgshettigar95/personal-portfolio.git
+
+# Navigate into the folder
+cd personal-portfolio
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+Your app will be live at: http://localhost:5173
+
