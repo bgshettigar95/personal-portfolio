@@ -25,6 +25,15 @@ A modern, animated, and responsive **personal portfolio website** built with **R
 ---
 
 ## 📸 Preview
+![img1](https://github.com/user-attachments/assets/68c2c774-8a8e-4306-8d0f-213128f79e2f)
+
+![img2](https://github.com/user-attachments/assets/66a5c14d-1fc1-4d0c-b26b-d20f33aa6f47)
+
+![img3](https://github.com/user-attachments/assets/9f8ab5b2-5941-40c3-858b-49dae6610ab0)
+
+![img4](https://github.com/user-attachments/assets/0601e5dd-6fbb-44cd-838a-3c73ae05505e)
+
+
 
 ## ⚙️ Installation & Setup
 
