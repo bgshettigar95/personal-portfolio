@@ -141,7 +141,7 @@ const ContactMe = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <div className="flex flex-col items-center lg:items-start ml-4 mt-4">
+          <div className="flex flex-col items-center lg:items-start m-4">
             <div className="flex flex-col mb-4 items-center lg:items-start">
               <h3 className="mb-2 font-semibold flex items-center">
                 <FaLocationDot className="mr-2" />
